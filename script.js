@@ -18,8 +18,7 @@ console.log(`Стоимость верстки экранов ${screenPrice} р�
 console.log(`Стоимость разработки сайта ${fullPrice} рублей`);
 
 //Приведение строки к нижнему регистру и вывод массива в консоль
-console.log(screens.toLocaleLowerCase());
-console.log(screens.split(''));
+console.log(screens.toLocaleLowerCase().split(", "));
 
 //Процент отката 
 console.log(fullPrice * (rollback / 100));
