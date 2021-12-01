@@ -6,24 +6,23 @@ let screens = prompt('Какие типы экранов нужно разраб
 let screensPrice = +prompt('Сколько будет стоить данная работа?');
 let adaptive = confirm("Нужен ли адаптив на сайте?");
 
-let service1 = 'Макет';
-let service2 = 'Верстка';
-let servicePrice1 = 100;
-let servicePrice2 = 150;
+//let service1 = 'Макет';
+//let service2 = 'Верстка';
+//let servicePrice1 = 100;
+//let servicePrice2 = 150;
 
 let answer1 = prompt(
   'Какой дополнительный тип услуги нужен?',
-  `${service1}, ${service2}`
+ "Макет", "Верстка"
 );
-let answer2 = +prompt('Сколько это будет стоить?', `${servicePrice1}, ${servicePrice2}`);
+let answer2 = +prompt('Сколько это будет стоить?', 100);
 let answer3 = prompt(
   'Какой дополнительный тип услуги нужен?',
-  `${service1}, ${service2}`
+  'Макет',
+  'Верстка'
 );
 let answer4 = +prompt(
-  'Сколько это будет стоить?',
-  `${servicePrice1}, ${servicePrice2}`
-);
+  'Сколько это будет стоить?',120);
 
 let fullPrice = screensPrice + answer2 + answer4;
 
