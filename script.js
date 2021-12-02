@@ -5,28 +5,28 @@ let screens = prompt('Какие типы экранов нужно разраб
   'Простые, Сложные, Интерактивные');
 let screensPrice = +prompt('Сколько будет стоить данная работа?');
 let adaptive = confirm("Нужен ли адаптив на сайте?");
-
-//let service1 = 'Макет';
-//let service2 = 'Верстка';
-//let servicePrice1 = 100;
-//let servicePrice2 = 150;
-
 let answer1 = prompt(
   'Какой дополнительный тип услуги нужен?',
- "Макет", "Верстка"
-);
+ "Макет", "Верстка");
 let answer2 = +prompt('Сколько это будет стоить?', 100);
 let answer3 = prompt(
-  'Какой дополнительный тип услуги нужен?',
-  'Макет',
-  'Верстка'
-);
-let answer4 = +prompt(
-  'Сколько это будет стоить?',120);
-
+  'Какой дополнительный тип услуги нужен?', 'Макет', 'Верстка');
+let answer4 = +prompt('Сколько это будет стоить?',120);
 let fullPrice = screensPrice + answer2 + answer4;
-
 let servicePercentPrice = fullPrice - Math.ceil(fullPrice * 0.05);
+
+
+
+if (fullPrice >= 30000){
+  alert('Даем скидку в 10%'); 
+} else if (fullPrice >= 15000 && fullPrice < 30000){
+  alert('Даем скидку в 5%');
+} 
+  else if (fullPrice < 15000 && fullPrice >= 0) {
+    alert('Скидка не предусмотрена');
+} else {
+    alert('Что то пошло не так');
+} 
 
 console.log(title);
 console.log(screens);
@@ -38,18 +38,6 @@ console.log(answer3);
 console.log(answer4);
 console.log(fullPrice);
 console.log(servicePercentPrice);
-
-if (fullPrice >= 30000){
-  alert('Даем скидку в 10%'); 
-} else if (fullPrice >= 15000 && fullPrice < 30000){
-  alert('Даем скидку в 5%');
-} 
-  else if (fullPrice < 15000 && fullPrice >= 0) {
-    alert('Скидка не предусмотрена');
-  } else {
-    alert('Что то пошло не так');
-  } 
-
 //Переменные 
 
 //let title = 'Lesson02';
