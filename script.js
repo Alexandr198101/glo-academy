@@ -13,7 +13,31 @@ let answer3 = prompt(
   'Какой дополнительный тип услуги нужен?', 'Макет', 'Верстка');
 let answer4 = +prompt('Сколько это будет стоить?',120);
 let fullPrice = screensPrice + answer2 + answer4;
-let servicePercentPrice = fullPrice - Math.ceil(fullPrice * 0.05);
+//let servicePercentPrice = fullPrice - Math.ceil(fullPrice * 0.05);
+
+/////////
+
+let allServicePrices = function (a, b) {
+  return a + b;
+};
+console.log(allServicePrices(answer2, answer4));
+
+
+function getfullPrice(a, b) {
+  return a + b;
+}
+getfullPrice(screensPrice,allServicePrices);
+
+
+function getTitle() {
+  console.log(title[0].toUpperCase() + title.substring(1));
+} 
+getTitle();
+
+let servicePercentPrice = function (a, b) {
+  return a - (b * 0.05);
+};
+console.log(servicePercentPrice(fullPrice, fullPrice * 0.05));
 
 
 
@@ -29,7 +53,7 @@ if (fullPrice >= 30000){
 } 
 
 console.log(title);
-console.log(screens);
+console.log(screens[0]);
 console.log(screensPrice);
 console.log(adaptive);
 console.log(answer1);
@@ -37,7 +61,9 @@ console.log(answer2);
 console.log(answer3);
 console.log(answer4);
 console.log(fullPrice);
-console.log(servicePercentPrice);
+//console.log(servicePercentPrice);
+
+
 //Переменные 
 
 //let title = 'Lesson02';
