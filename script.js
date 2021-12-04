@@ -15,14 +15,14 @@ let servicePercentPrice;
 let allServicePrices;
 let commission = 5;
 
-//showTypeOf
-const showTypeOf = function (variable) {
-  console.log(variable, typeof variable);
-};
-
 //getAllServicePrices
 let getAllServicePrices = function () {
   return answer2 + answer4;
+};
+
+//showTypeOf
+const showTypeOf = function (variable) {
+  console.log(variable, typeof variable);
 };
 
 //getFullPrice
@@ -30,15 +30,15 @@ let getFullPrice = function() {
   return screensPrice + allServicePrices;
 };
 
-//getTitle
-function getTitle() {
-  console.log(title[0].toUpperCase() + title.substring(1));
-}
-
 //getServicePercentPrice
 let getServicePercentPrice = function () {
   return fullPrice - (fullPrice * (commission / 100));
 };
+
+//getTitle
+function getTitle() {
+  console.log(title[0].toUpperCase() + title.substring(1));
+}
 
 //getRollbackMessage;
 const getRollbackMessage = function (price) {
@@ -55,17 +55,21 @@ if (price >= 30000) {
 
 showTypeOf(title);
 showTypeOf(screensPrice);
+showTypeOf(adaptive);
 
-title = getTitle();
+allServicePrices = getAllServicePrices();
 fullPrice = getFullPrice();
 servicePercentPrice = getServicePercentPrice();
-allServicePrices = getAllServicePrices();
+title = getTitle();
 
 console.log(getRollbackMessage(fullPrice));
+console.log(typeof title);
+console.log(typeof screensPrice);
+console.log(typeof adaptive);
+
+console.log(screens.length);
 console.log(servicePercentPrice);
 
-console.log(allServicePrices);
 
-console.log(fullPrice);
 
 
