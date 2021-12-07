@@ -37,7 +37,8 @@ let getServicePercentPrice = function () {
 
 //getTitle
 function getTitle() {
-  console.log(title[0].toUpperCase() + title.substring(1));
+  //console.log(title[0].toUpperCase() + title.substring(1));
+  console.log(title[0].toUpperCase() + title.substring(1).toLowerCase());
 }
 
 //getRollbackMessage;
@@ -63,12 +64,13 @@ servicePercentPrice = getServicePercentPrice();
 title = getTitle();
 
 console.log(getRollbackMessage(fullPrice));
-console.log(typeof title);
+console.log(typeof 'title');
 console.log(typeof screensPrice);
 console.log(typeof adaptive);
 
 console.log(screens.length);
 console.log(servicePercentPrice);
+//console.log(title[0].toUpperCase() + title.substring(1).toLowerCase());
 
 
 
