@@ -9,7 +9,7 @@ function getGame() {
 
   //Получение случайного числа в заданном интервале
   function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.ceil(Math.random()) * (max - min) + min;
   }
     //Присваиваем переменную х
     let x = getRandomArbitrary(1, 100);
