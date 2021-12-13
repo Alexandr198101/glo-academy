@@ -16,9 +16,9 @@ function getGame() {
     console.log(x);
   //Условия 
   function getRandomInt() {
-    let question = +prompt('Угадай число от 1 до 100');
-      if (question === null || question === "null" || question === "") {
-        alert('Игра окончена');
+    let question = prompt('Угадай число от 1 до 100');
+      if (question === null || question === "") {
+        alert("Игра окончена");
       } else if (!isNumber(question)) {
         alert("Введите число");
         return getRandomInt();
